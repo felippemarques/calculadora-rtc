@@ -2,7 +2,7 @@ FROM eclipse-temurin:21-jre-jammy
 
 WORKDIR /app
 
-COPY api-regime-gerar.jar app.jar
+COPY api-regime-geral.jar app.jar
 
 EXPOSE 8080
 
