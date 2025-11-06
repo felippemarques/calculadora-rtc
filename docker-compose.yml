@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  calculadora:
+    build: .
+    container_name: calculadora-tributaria
+    # Mapeamento da porta interna 8081 para a porta 8080 do contêiner
+    ports:
+      - "8081:8080"
+    restart: unless-stopped
