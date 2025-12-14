@@ -8,3 +8,5 @@ services:
     ports:
       - "8081:8080"
     restart: unless-stopped
+    environment:
+      CORS_ORIGIN: 'https://app.wm10.com.br'
