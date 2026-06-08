@@ -2,9 +2,10 @@ FROM eclipse-temurin:21-jre-jammy
 
 WORKDIR /app
 
-RUN mkdir -p /app/calculadora/db
+RUN mkdir -p /app/calculadora/db /backup
 
-COPY /calculadora/db/calculadora.db /app/calculadora/db/calculadora.db
+COPY /calculadora/db/calculadora-pro.db /backup/calculadora-pro.db
+COPY /calculadora/db/calculadora.db /backup/calculadora.db
 
 COPY api-regime-geral.jar app.jar
 COPY entrypoint.sh entrypoint.sh
